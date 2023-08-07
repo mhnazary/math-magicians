@@ -92,11 +92,11 @@ npm run build
 
 ### 👤 **Mahram Hossain**  
 
-  - GitHub: [@Betel](https://github.com/mhnazary)
+  - GitHub: [@mhnazary](https://github.com/mhnazary)
 
-  - Twitter: [@Betel](https://twitter.com/mh_nazary)
+  - Twitter: [@mhnazary](https://twitter.com/mh_nazary)
 
-  - LinkedIn: [Betel](https://www.linkedin.com/in/mh-nazary-515686204/)
+  - LinkedIn: [@mhnazary](https://www.linkedin.com/in/mh-nazary-515686204/)
 
   _Feel free to reach out to us if you have any questions or collaboration opportunities!_
 
