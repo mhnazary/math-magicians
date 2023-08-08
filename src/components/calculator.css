@@ -18,6 +18,7 @@ button {
   height: 2.5rem;
   border: none;
   border: 1px solid gray;
+  cursor: pointer;
 }
 
 button:nth-child(4),
