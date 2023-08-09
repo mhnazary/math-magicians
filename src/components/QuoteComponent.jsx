@@ -1,3 +1,4 @@
+import './QuoteComponent.css';
 import React, { useEffect, useState } from 'react';
 
 export default function QuoteComponent() {
@@ -41,13 +42,16 @@ export default function QuoteComponent() {
   }
 
   return (
-    <div className="">
+    <div className="quote-container">
       <h2>
-        QuoteComponent :
+        <span>quote</span>
+        {' '}
+        :
         {quote.quote}
       </h2>
       <p>
-        Author:
+        <span>Author</span>
+        :
         {quote.author}
       </p>
     </div>

@@ -1,0 +1,15 @@
+.quote-container {
+    border: 2px solid blue;
+    width: 90%;
+    margin: auto;
+    min-height: 7rem;
+    padding: 1rem;
+}
+
+span {
+    color: orange;
+}
+
+h2 {
+    margin-bottom: .5rem;
+}
