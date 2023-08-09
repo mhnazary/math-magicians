@@ -1,14 +1,14 @@
 .quote-container {
-    width: 90%;
-    margin: auto;
-    min-height: 7rem;
-    padding: 1rem;
+  width: 90%;
+  margin: auto;
+  min-height: 7rem;
+  padding: 1rem;
 }
 
 span {
-    color: orange;
+  color: orange;
 }
 
 h2 {
-    margin-bottom: .5rem;
+  margin-bottom: 0.5rem;
 }
