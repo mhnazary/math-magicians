@@ -1,0 +1,44 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.nav {
+  box-shadow: 4px 0px 5px black;
+  height: 4rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.5rem 4rem;
+}
+
+ul {
+  display: flex;
+  width: 40%;
+  list-style-type: none;
+  justify-content: space-between;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+.active {
+  color: orange;
+}
+
+.nav-container {
+    padding: 3rem;
+}
+
+.nav-title {
+    font-size: 1.6rem;
+}
+
+.nav-p {
+    text-align: justify;
+}

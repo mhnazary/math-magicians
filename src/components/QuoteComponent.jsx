@@ -1,5 +1,6 @@
-import './QuoteComponent.css';
 import React, { useEffect, useState } from 'react';
+import './QuoteComponent.css';
+import Header from './Header';
 
 export default function QuoteComponent() {
   const [loading, setLoading] = useState(true);
@@ -42,18 +43,21 @@ export default function QuoteComponent() {
   }
 
   return (
-    <div className="quote-container">
-      <h2>
-        <span>quote</span>
-        {' '}
-        :
-        {quote.quote}
-      </h2>
-      <p>
-        <span>Author</span>
-        :
-        {quote.author}
-      </p>
-    </div>
+    <>
+      <Header />
+      <div className="quote-container">
+        <h2>
+          <span>quote</span>
+          {' '}
+          :
+          {quote.quote}
+        </h2>
+        <p>
+          <span>Author</span>
+          :
+          {quote.author}
+        </p>
+      </div>
+    </>
   );
 }

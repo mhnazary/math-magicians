@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import PropTypes from 'prop-types';
+import Header from './Header';
 import calculate from '../logic/calculate';
 import './calculator.css';
 
@@ -16,19 +17,48 @@ function Calculator() {
 
   const value = state.next || state.total || '0';
 
-  const keys = ['AC', '+/-', '%', '÷', '7', '8', '9', 'x', '4', '5', '6', '-', '1', '2', '3', '+', '0', '.', '='];
+  const keys = [
+    'AC',
+    '+/-',
+    '%',
+    '÷',
+    '7',
+    '8',
+    '9',
+    'x',
+    '4',
+    '5',
+    '6',
+    '-',
+    '1',
+    '2',
+    '3',
+    '+',
+    '0',
+    '.',
+    '=',
+  ];
 
   return (
-    <div className="container">
-      <Input value={value} />
-      <div className="buttons">
-        {keys.map((key) => (
-          <button type="button" key={key} value={key} onClick={() => handleClick(key)}>
-            {key}
-          </button>
-        ))}
+    <>
+      <Header />
+      
+      <div className="container">
+        <Input value={value} />
+        <div className="buttons">
+          {keys.map((key) => (
+            <button
+              type="button"
+              key={key}
+              value={key}
+              onClick={() => handleClick(key)}
+            >
+              {key}
+            </button>
+          ))}
+        </div>
       </div>
-    </div>
+    </>
   );
 }
 

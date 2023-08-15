@@ -1,4 +1,5 @@
 import { NavLink } from 'react-router-dom';
+import './style.css';
 
 function Header() {
   return (
@@ -12,7 +13,7 @@ function Header() {
           <NavLink to="/calculator"> Calculator </NavLink>
         </li>
         <li>
-          <NavLink to="/quote"> Home </NavLink>
+          <NavLink to="/quote"> Quote </NavLink>
         </li>
       </ul>
     </div>
