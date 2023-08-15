@@ -1,7 +1,8 @@
 import React, { useState } from 'react';
 import PropTypes from 'prop-types';
-import Header from './Header';
+
 import calculate from '../logic/calculate';
+import Navbar from './Navbar';
 
 function Calculator() {
   const [state, setState] = useState({
@@ -40,7 +41,7 @@ function Calculator() {
 
   return (
     <>
-      <Header />
+      <Navbar />
       <div className="calculator-title">
         <h3>Let&apos;s do some Math !!!</h3>
       </div>

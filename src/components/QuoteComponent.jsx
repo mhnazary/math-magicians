@@ -1,10 +1,10 @@
 import React, { useEffect, useState } from 'react';
-import Header from './Header';
+import Navbar from './Navbar';
 
 export default function Quote() {
   return (
     <>
-      <Header />
+      <Navbar />
       <QuoteComponent />
     </>
   );

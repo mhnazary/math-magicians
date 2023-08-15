@@ -1,10 +1,10 @@
-import Header from './Header';
+import Navbar from './Navbar';
 import './style.css';
 
 function HomePage() {
   return (
     <>
-      <Header />
+      <Navbar />
       <div className="nav-container">
         <h2 className="nav-title">Welcome to our Page!</h2>
         <p className="nav-p">
