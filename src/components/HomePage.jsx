@@ -1,4 +1,5 @@
-import Header from './Header';
+import Header from './Header.jsx';
+import './style.css';
 
 function HomePage() {
   return (
