@@ -5,7 +5,7 @@
 }
 
 .nav {
-  box-shadow: 4px 0px 5px black;
+  box-shadow: 4px 0 5px black;
   height: 4rem;
   display: flex;
   justify-content: space-between;
@@ -62,7 +62,7 @@ a {
   min-height: 17rem;
   padding: 1rem;
   margin-top: 5rem;
-  box-shadow: 3px 0px 8px gray;
+  box-shadow: 3px 0 8px gray;
   border-radius: 10px;
 }
 
@@ -78,7 +78,7 @@ h2 {
 
 .container {
   width: 600px;
-  margin: 0rem 30rem 3rem;
+  margin: 0 30rem 3rem;
 }
 
 .buttons {
