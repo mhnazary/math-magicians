@@ -1,7 +1,8 @@
 import React, { useState } from 'react';
 import PropTypes from 'prop-types';
+
 import calculate from '../logic/calculate';
-import './calculator.css';
+import Navbar from './Navbar';
 
 function Calculator() {
   const [state, setState] = useState({
@@ -16,19 +17,50 @@ function Calculator() {
 
   const value = state.next || state.total || '0';
 
-  const keys = ['AC', '+/-', '%', '÷', '7', '8', '9', 'x', '4', '5', '6', '-', '1', '2', '3', '+', '0', '.', '='];
+  const keys = [
+    'AC',
+    '+/-',
+    '%',
+    '÷',
+    '7',
+    '8',
+    '9',
+    'x',
+    '4',
+    '5',
+    '6',
+    '-',
+    '1',
+    '2',
+    '3',
+    '+',
+    '0',
+    '.',
+    '=',
+  ];
 
   return (
-    <div className="container">
-      <Input value={value} />
-      <div className="buttons">
-        {keys.map((key) => (
-          <button type="button" key={key} value={key} onClick={() => handleClick(key)}>
-            {key}
-          </button>
-        ))}
+    <>
+      <Navbar />
+      <div className="calculator-title">
+        <h3>Let&apos;s do some Math !!!</h3>
       </div>
-    </div>
+      <div className="container">
+        <Input value={value} />
+        <div className="buttons">
+          {keys.map((key) => (
+            <button
+              type="button"
+              key={key}
+              value={key}
+              onClick={() => handleClick(key)}
+            >
+              {key}
+            </button>
+          ))}
+        </div>
+      </div>
+    </>
   );
 }
 

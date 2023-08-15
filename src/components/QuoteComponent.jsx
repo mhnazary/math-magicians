@@ -1,7 +1,16 @@
-import './QuoteComponent.css';
 import React, { useEffect, useState } from 'react';
+import Navbar from './Navbar';
 
-export default function QuoteComponent() {
+export default function Quote() {
+  return (
+    <>
+      <Navbar />
+      <QuoteComponent />
+    </>
+  );
+}
+
+function QuoteComponent() {
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
   const [quote, setQuote] = useState({});
@@ -42,18 +51,20 @@ export default function QuoteComponent() {
   }
 
   return (
-    <div className="quote-container">
-      <h2>
-        <span>quote</span>
-        {' '}
-        :
-        {quote.quote}
-      </h2>
-      <p>
-        <span>Author</span>
-        :
-        {quote.author}
-      </p>
-    </div>
+    <>
+      <div className="quote-container">
+        <h2>
+          <span>quote</span>
+          {' '}
+          :
+          {quote.quote}
+        </h2>
+        <p>
+          <span>Author</span>
+          :
+          {quote.author}
+        </p>
+      </div>
+    </>
   );
 }
