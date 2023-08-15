@@ -6,7 +6,7 @@
 
 .container {
   width: 400px;
-  margin: 9rem auto 3rem;
+  margin: 4rem auto 3rem;
 }
 
 .buttons {
@@ -49,4 +49,9 @@ button:nth-child(17) {
   padding: 0.2rem 1rem;
   border: none;
   cursor: pointer;
+}
+
+.calculator-title {
+  font-size: 1.6rem;
+  margin: 3rem 0 0 2rem;
 }

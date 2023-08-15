@@ -42,7 +42,9 @@ function Calculator() {
   return (
     <>
       <Header />
-      
+      <div className="calculator-title">
+        <h3>Let&apos;s do some Math !!!</h3>
+      </div>
       <div className="container">
         <Input value={value} />
         <div className="buttons">
