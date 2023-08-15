@@ -11,6 +11,12 @@
   justify-content: space-between;
   align-items: center;
   padding: 0.5rem 4rem;
+  background-color: #f2f2f2;
+}
+
+h1 {
+  font-size: 2rem;
+  color: #333;
 }
 
 ul {
@@ -25,6 +31,11 @@ ul {
 a {
   text-decoration: none;
   color: black;
+  transition: color 0.3s ease;
+}
+
+.list a:hover {
+  color: orange;
 }
 
 .active {
@@ -32,13 +43,89 @@ a {
 }
 
 .nav-container {
-    padding: 3rem;
+  padding: 3rem;
 }
 
 .nav-title {
-    font-size: 1.6rem;
+  font-size: 1.6rem;
 }
 
 .nav-p {
-    text-align: justify;
+  text-align: justify;
+}
+
+/* Quots part */
+
+.quote-container {
+  width: 80%;
+  margin: auto;
+  min-height: 17rem;
+  padding: 1rem;
+  margin-top: 5rem;
+  box-shadow: 3px 0px 8px gray;
+  border-radius: 10px;
+}
+
+span {
+  color: orange;
+}
+
+h2 {
+  margin-bottom: 0.5rem;
+}
+
+/* calculator part */
+
+.container {
+  width: 600px;
+  margin: 0rem 30rem 3rem;
+}
+
+.buttons {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+button {
+  height: 3.5rem;
+  border: none;
+  border: 1px solid gray;
+  cursor: pointer;
+  font-size: 1.2rem;
+}
+
+button:nth-child(4),
+button:nth-child(8),
+button:nth-child(12),
+button:nth-child(16),
+button:nth-child(19) {
+  color: black;
+  background-color: orange;
+  outline: none;
+  border: none;
+  border-bottom: 1px solid lightblue;
+}
+
+button:nth-child(17) {
+  grid-column: 1/3;
+}
+
+.input {
+  width: 100%;
+  height: 4rem;
+  outline: none;
+  font-size: 2rem;
+  font-weight: bold;
+  background-color: gray;
+  color: #fff;
+  text-align: right;
+  padding: 0.2rem 1rem;
+  border: none;
+  cursor: pointer;
+}
+
+.calculator-title {
+  font-size: 1.6rem;
+  margin: 3rem 0 0 2rem;
+  display: inline-block;
 }

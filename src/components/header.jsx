@@ -1,11 +1,11 @@
-import { NavLink } from 'react-router-dom';
+import { Link, NavLink } from 'react-router-dom';
 import './style.css';
 
 function Header() {
   return (
     <div className="nav">
-      <h1>Math Magicians</h1>
-      <ul>
+      <h1><Link to="/"> Math Magicians</Link></h1>
+      <ul className="list">
         <li>
           <NavLink to="/"> Home </NavLink>
         </li>

@@ -2,7 +2,6 @@ import React, { useState } from 'react';
 import PropTypes from 'prop-types';
 import Header from './Header';
 import calculate from '../logic/calculate';
-import './calculator.css';
 
 function Calculator() {
   const [state, setState] = useState({

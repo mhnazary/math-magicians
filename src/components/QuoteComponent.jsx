@@ -1,8 +1,16 @@
 import React, { useEffect, useState } from 'react';
-import './QuoteComponent.css';
 import Header from './Header';
 
-export default function QuoteComponent() {
+export default function Quote() {
+  return (
+    <>
+      <Header />
+      <QuoteComponent />
+    </>
+  );
+}
+
+function QuoteComponent() {
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
   const [quote, setQuote] = useState({});
@@ -44,7 +52,6 @@ export default function QuoteComponent() {
 
   return (
     <>
-      <Header />
       <div className="quote-container">
         <h2>
           <span>quote</span>
