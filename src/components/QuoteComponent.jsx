@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import Header from './Header.jsx';
+import Header from './Header';
 
 export default function Quote() {
   return (

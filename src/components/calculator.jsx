@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import PropTypes from 'prop-types';
-import Header from './Header.jsx';
+import Header from './Header';
 import calculate from '../logic/calculate';
 
 function Calculator() {
