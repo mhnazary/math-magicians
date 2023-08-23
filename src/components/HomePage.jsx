@@ -1,12 +1,12 @@
 import Navbar from './Navbar';
-import './style.css';
+import '../index.css';
 
 function HomePage() {
   return (
     <>
       <Navbar />
-      <div className="nav-container">
-        <h2 className="nav-title">Welcome to our Page!</h2>
+      <div className="nav-container w-full px-6 mt-0 md:px-16">
+        <h2 className="nav-title font-bold flex justify-center">Welcome to our Page!</h2>
         <p className="nav-p">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus
           saepe quod, nostrum sit illum distinctio, dolore autem porro maiores

@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import PropTypes from 'prop-types';
-
+import '../index.css';
 import calculate from '../logic/calculate';
 import Navbar from './Navbar';
 
@@ -42,22 +42,24 @@ function Calculator() {
   return (
     <>
       <Navbar />
-      <div className="calculator-title">
-        <h3>Let&apos;s do some Math !!!</h3>
-      </div>
-      <div className="container">
-        <Input value={value} />
-        <div className="buttons">
-          {keys.map((key) => (
-            <button
-              type="button"
-              key={key}
-              value={key}
-              onClick={() => handleClick(key)}
-            >
-              {key}
-            </button>
-          ))}
+      <div className="border md:flex md:flex-col md:h-3/4 md:justify-between md:items-center">
+        <div className="calculator-title md:mb-16 font-bold text-3xl md:mt-36">
+          <h3>Let&apos;s do some Math !!!</h3>
+        </div>
+        <div className="container w-full px-4 mt-4 md:1/2 lg:1/2">
+          <Input value={value} />
+          <div className="buttons">
+            {keys.map((key) => (
+              <button
+                type="button"
+                key={key}
+                value={key}
+                onClick={() => handleClick(key)}
+              >
+                {key}
+              </button>
+            ))}
+          </div>
         </div>
       </div>
     </>

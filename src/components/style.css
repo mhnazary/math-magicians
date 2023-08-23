@@ -1,9 +1,9 @@
-* {
+/* * {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
 }
-
+/*
 .nav {
   box-shadow: 4px 0 5px black;
   height: 4rem;
@@ -55,7 +55,7 @@ a {
 }
 
 /* Quots part */
-
+/*
 .quote-container {
   width: 80%;
   margin: auto;
@@ -75,7 +75,7 @@ h2 {
 }
 
 /* calculator part */
-
+/*
 .container {
   width: 600px;
   margin: 0 30rem 3rem;
@@ -128,4 +128,4 @@ button:nth-child(17) {
   font-size: 1.6rem;
   margin: 3rem 0 0 2rem;
   display: inline-block;
-}
+} */

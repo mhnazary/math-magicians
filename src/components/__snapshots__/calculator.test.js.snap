@@ -1,0 +1,7 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Calculator calculator is rendering 1`] = `
+"[36m<div>[39m
+  [36m<calculator />[39m
+[36m</div>[39m"
+`;
